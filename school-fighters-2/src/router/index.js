@@ -1,23 +1,20 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import VistaCombate from '@/views/VistaCombate.vue'
-import VistaPersonajes from '@/views/VistaPersonajes.vue'
-import VistaEscenarios from '@/views/VistaEscenarios.vue'
 
 const routes = [
   {
     path: '/',
     name: 'Personajes',
-    component: VistaPersonajes
+    component:() => import('@/views/VistaPersonajes.vue')
   },
   {
     path: '/combate',
     name: 'Combate',
-    component: VistaCombate
+    component: () => import('@/views/VistaCombate.vue')
   },
   {
     path: '/escenarios',
     name: 'Escenarios',
-    component: VistaEscenarios
+    component: import('@/views/VistaEscenarios.vue')
   }
 ]
 

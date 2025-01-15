@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <h1>Combates</h1>
-    </div>
+    <section>
+        
+    </section>
 </template>
 
 <script>
